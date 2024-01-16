@@ -1,4 +1,4 @@
-package Repository;
+package com.Devbti.Repository;
 
 public class AnswerRepository {
 }
