@@ -18,7 +18,7 @@ public class AnswerController {
     private AnswerService answerService;
 
     @GetMapping
-    public ResponseEntity<List<AnswerDTO>> getQuestion() {
+    public ResponseEntity<List<AnswerDTO>> getAnswer() {
         List<AnswerDTO> result = answerService.getAnswers();
         return ResponseEntity.ok(result);
     }
