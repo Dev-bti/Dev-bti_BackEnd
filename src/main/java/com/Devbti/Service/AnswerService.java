@@ -13,7 +13,7 @@ public class AnswerService {
     @Autowired
     private AnswerRepository answerRepository;
     public List<AnswerDTO> getAnswers() {
-        return answerRepository.getAnswers();
+        return answerRepository.getAnswersForQuestion(null);
         //return questionRepository.findAll();
     }
 }
