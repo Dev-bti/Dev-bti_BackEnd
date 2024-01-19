@@ -1,5 +1,8 @@
 package com.Devbti.DTO;
 
+import lombok.Getter;
+
+@Getter
 public class AnswerDTO {
     private Integer Answer_ID;
     private Integer Question_ID;
