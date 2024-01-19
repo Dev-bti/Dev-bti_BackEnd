@@ -1,10 +1,11 @@
 package com.Devbti.Service;
 
+import com.Devbti.DTO.QuestionDTO;
 import com.Devbti.Repository.QuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.List;
 
 @Service
 public class QuestionService {
@@ -12,7 +13,10 @@ public class QuestionService {
     @Autowired
     private QuestionRepository questionRepository;
 
-    public List<Map<String, Object>> getQuestionandAnswer() {
-        return questionRepository.getQuestionandAnswer();
+    @Autowired
+    private AnswerService answerService;
+
+    public List<QuestionDTO> getQuestions() {
+        return questionRepository.getQuestions();
     }
 }
