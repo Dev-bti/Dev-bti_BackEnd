@@ -20,13 +20,6 @@ public class QuestionService {
 
     private AnswerRepository answerRepository;
 
-    /*
-    public List<QuestionDTO> getQuestions() {
-         //되는거
-        List<QuestionDTO> result = questionRepository.getQuestions();
-        return result;
-    }
-*/
     public List<QuestionDTO> getQuestions() {
         List<QuestionDTO> result = new ArrayList<>();
         List<QuestionDTO> questions = questionRepository.getQuestions();
@@ -36,7 +29,6 @@ public class QuestionService {
             question.setAnswers(answers);
             result.add(question);
         }
-
         return result;
     }
 }
