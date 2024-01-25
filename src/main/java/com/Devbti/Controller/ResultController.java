@@ -14,12 +14,14 @@ public class ResultController {
     @Autowired
     private ResultService resultService;
 
-    /*@GetMapping
-    public ResponseEntity<List<>> getResult(@RequestParam int Front, int Back) {
-
-    }*/
+    private int devType;
     @GetMapping
-    public int isit(@RequestParam int Front, int Back) {
-        return Front + Back;
+    public ResponseEntity<List<>> getResult(@RequestParam int frontScore, int backScore) {
+
     }
+
+    /*@GetMapping
+    public int isit(@RequestParam int frontScore, int backScore) {
+        return frontScore + backScore;
+    }*/
 }
