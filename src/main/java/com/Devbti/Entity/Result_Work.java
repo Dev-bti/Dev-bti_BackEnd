@@ -1,12 +1,12 @@
 package com.Devbti.Entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+
+import java.io.Serializable;
 
 @Entity
 @Table(name = "result_work_table")
+@IdClass(Result_Work.Result_WorkId.class)
 public class Result_Work {
     @Id
     @Column(name = "Dev_Type_Code")
@@ -17,4 +17,9 @@ public class Result_Work {
     private Integer Work_Code;
 
     private String Work_Do;
+
+    public class Result_WorkId implements Serializable {
+        private Integer Dev_Type_Code;
+        private Integer Work_Code;
+    }
 }
