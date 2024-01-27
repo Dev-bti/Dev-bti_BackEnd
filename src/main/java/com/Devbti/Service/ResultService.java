@@ -1,6 +1,7 @@
 package com.Devbti.Service;
 
 import com.Devbti.DTO.Result_TypeDTO;
+import com.Devbti.Repository.Result_LanguageRepository;
 import com.Devbti.Repository.Result_PersonalityRepository;
 import com.Devbti.Repository.Result_TypeRepository;
 import com.Devbti.Repository.Result_WorkRepository;
@@ -22,7 +23,7 @@ public class ResultService {
     private Result_WorkRepository resultworkRepository;
 
     @Autowired
-    private Result_WorkRepository resultWorkRepository;
+    private Result_LanguageRepository resultLanguageRepository;
 
     public List<Result_TypeDTO> getResult(Integer Dev_Type_Code) {
         List<Result_TypeDTO> result = new ArrayList<>();
