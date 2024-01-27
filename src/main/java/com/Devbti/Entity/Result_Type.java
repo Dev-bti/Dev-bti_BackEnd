@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 public class Result_Type {
     @Id
     @Column(name = "Dev_Type_Code")
-    private int Dev_Type_Code;
+    private Integer Dev_Type_Code;
 
     private String Dev_Type;
 

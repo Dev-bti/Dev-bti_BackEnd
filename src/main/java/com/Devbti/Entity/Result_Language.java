@@ -10,11 +10,11 @@ import jakarta.persistence.Table;
 public class Result_Language {
     @Id
     @Column(name = "Dev_Type_Code")
-    private int Dev_Type_Code;
+    private Integer Dev_Type_Code;
 
     @Id
     @Column(name = "Language_Code")
-    private int Language_Code;
+    private Integer Language_Code;
 
     private String Language_Name;
 

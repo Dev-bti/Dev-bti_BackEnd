@@ -10,11 +10,11 @@ import jakarta.persistence.Table;
 public class Result_Personality {
     @Id
     @Column(name = "Dev_Type_Code")
-    private int Dev_Type_Code;
+    private Integer Dev_Type_Code;
 
     @Id
     @Column(name = "Personality_Code")
-    private int Personality_Code;
+    private Integer Personality_Code;
 
     private String Personality_Value;
 }
