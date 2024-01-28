@@ -13,7 +13,4 @@ public class Question {
     private Integer Question_ID;
     private String Question_Sentence;
     private String Question_Image;
-
-    /*@OneToMany(mappedBy = "Question_ID")
-    private List<Answer> answer;*/
 }

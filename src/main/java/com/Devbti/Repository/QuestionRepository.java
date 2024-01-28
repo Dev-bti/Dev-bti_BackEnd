@@ -10,7 +10,6 @@ import java.util.List;
 
 @Repository
 public interface QuestionRepository extends JpaRepository<Question, Integer> {
-    //되는거
     @Query("SELECT new com.Devbti.DTO.QuestionDTO(q.Question_ID, q.Question_Sentence, q.Question_Image) FROM Question q")
     List<QuestionDTO> getQuestions();
 }

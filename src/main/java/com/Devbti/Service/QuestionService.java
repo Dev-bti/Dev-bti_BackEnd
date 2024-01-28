@@ -17,7 +17,6 @@ public class QuestionService {
     private QuestionRepository questionRepository;
 
     @Autowired
-
     private AnswerRepository answerRepository;
 
     public List<QuestionDTO> getQuestions() {

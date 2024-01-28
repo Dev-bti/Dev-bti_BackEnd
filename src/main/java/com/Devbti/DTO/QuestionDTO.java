@@ -15,9 +15,6 @@ public class QuestionDTO {
         this.Answers = answers;
     }
 
-    public QuestionDTO() {
-    }
-
     public QuestionDTO(Integer Question_ID, String Question_Sentence, String Question_Image) {
         this.Question_ID = Question_ID;
         this.Question_Sentence = Question_Sentence;
