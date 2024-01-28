@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.*;
 
+//@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/result")
 public class ResultController {
@@ -20,7 +21,7 @@ public class ResultController {
 
     private Integer devType;
     @GetMapping
-    public ResponseEntity<List<Result_TypeDTO>> getResult(@RequestParam int frontScore, int backScore) {
+    public ResponseEntity<List<Result_TypeDTO>> getResult(@RequestParam(value = "frontScore") int frontScore, @RequestParam(value = "backScore") int backScore) {
         if(frontScore >= backScore) {
             if((frontScore - backScore) <= 10) devType = 0;
             else devType = 1;
