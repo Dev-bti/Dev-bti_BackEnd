@@ -9,4 +9,9 @@ public class Result_WorkDTO {
     public Result_WorkDTO(String Work_Do) {
         this.Work_Do = Work_Do;
     }
+
+    @Override
+    public String toString() {
+        return Work_Do;
+    }
 }

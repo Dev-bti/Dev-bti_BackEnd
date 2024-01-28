@@ -9,4 +9,9 @@ public class Result_LanguageDTO {
     public Result_LanguageDTO(String Language_Name) {
         this.Language_Name = Language_Name;
     }
+
+    @Override
+    public String toString() {
+        return Language_Name;
+    }
 }

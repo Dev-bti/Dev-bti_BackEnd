@@ -9,4 +9,9 @@ public class Result_PersonalityDTO {
     public Result_PersonalityDTO(String Personality_Value) {
         this.Personality_Value = Personality_Value;
     }
+
+    @Override
+    public String toString() {
+        return Personality_Value;
+    }
 }
