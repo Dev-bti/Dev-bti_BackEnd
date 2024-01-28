@@ -1,10 +1,12 @@
 package com.Devbti.DTO;
 
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
 @Getter
+@Setter
 public class Result_TypeDTO {
     private Integer Dev_Type_Code;
     private String Dev_Type;
