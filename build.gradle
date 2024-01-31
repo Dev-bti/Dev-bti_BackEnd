@@ -37,7 +37,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web:3.2.1' // 버전 수정
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	runtimeOnly 'com.mysql:mysql-connector-j:8.0.23' // 버전 수정
+	runtimeOnly 'mysql:mysql-connector-java:8.0.23' // 버전 수정
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test:3.2.1' // 버전 수정
 }
