@@ -14,6 +14,7 @@ public class Result_TypeDTO {
     private List<String> Dev_Personalities;
     private List<String> Dev_Works;
     private List<String> Dev_Languages;
+    private List<String> Dev_Lectures;
 
     public void setDev_Personalities(ArrayList<String> Dev_Personalities) {
         this.Dev_Personalities = Dev_Personalities;
@@ -27,6 +28,9 @@ public class Result_TypeDTO {
         this.Dev_Languages = Dev_Languages;
     }
 
+    public void setDev_Lectures(ArrayList<String> Dev_Lectures) {
+        this.Dev_Lectures = Dev_Lectures;
+    }
     public Result_TypeDTO(Integer Dev_Type_Code, String Dev_Type, String Dev_Adjective) {
         this.Dev_Type_Code = Dev_Type_Code;
         this.Dev_Type = Dev_Type;

@@ -1,10 +1,7 @@
 package com.Devbti.Service;
 
 import com.Devbti.DTO.Result_TypeDTO;
-import com.Devbti.Repository.Result_LanguageRepository;
-import com.Devbti.Repository.Result_PersonalityRepository;
-import com.Devbti.Repository.Result_TypeRepository;
-import com.Devbti.Repository.Result_WorkRepository;
+import com.Devbti.Repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +22,9 @@ public class ResultService {
     @Autowired
     private Result_LanguageRepository resultLanguageRepository;
 
+    @Autowired
+    private Result_LectureRepository resultLectureRepository;
+
     public List<Result_TypeDTO> getResult(Integer Dev_Type_Code) {
         List<Result_TypeDTO> result = new ArrayList<>();
 
@@ -32,6 +32,7 @@ public class ResultService {
         resultType.setDev_Personalities(resultPersonalityRepository.getResult_PersonalityBy(Dev_Type_Code));
         resultType.setDev_Works(resultworkRepository.getResult_WorkBy(Dev_Type_Code));
         resultType.setDev_Languages(resultLanguageRepository.getResult_LanguageBy(Dev_Type_Code));
+        resultType.setDev_Lectures(resultLectureRepository.getResult_LectureBy(Dev_Type_Code));
         result.add(resultType);
 
         return result;
