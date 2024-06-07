@@ -6,17 +6,18 @@ import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-@Table(name = "result_lecture_table")
+@Table(name = "result_lecture")
 @IdClass(Result_Lecture.Result_LectureId.class)
 public class Result_Lecture {
     @Id
-    @Column(name = "Dev_Type_Code")
+    @Column(name = "dev_type_code")
     private Integer Dev_Type_Code;
 
     @Id
-    @Column(name = "Lecture_Code")
+    @Column(name = "lecture")
     private Integer Lecture_Code;
 
+    @Column(name = "url")
     private String Lecture_URL;
 
     public static class Result_LectureId implements Serializable {

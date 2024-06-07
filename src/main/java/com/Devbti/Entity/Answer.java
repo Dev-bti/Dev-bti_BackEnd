@@ -5,18 +5,24 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "answer_table")
+@Table(name = "answer")
 @IdClass(Answer.AnswerId.class)
 public class Answer {
     @Id
-    @Column(name = "Answer_ID")
+    @Column(name = "answer_id")
     private Integer Answer_ID;
 
     @Id
-    @Column(name = "Question_ID")
+    @Column(name = "question_id")
     private Integer Question_ID;
+
+    @Column(name = "sentence")
     private String Answer_Sentence;
+
+    @Column(name = "front_score")
     private Integer Answer_Front;
+
+    @Column(name = "back_score")
     private Integer Answer_Back;
 
     public static class AnswerId implements Serializable {
